@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>CVBoost — OpenTheAspas</title>
+  <meta name="description" content="SaaS de currículos com score ATS, IA e exportação PDF. Produto CVBoost da OpenTheAspas.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html">
+        <img src="../assets/logo.svg" alt="">
+        <span>OpenTheAspas</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menu"><span></span></button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../projects.html">Projetos</a></li>
+        <li><a href="../index.html#estudio">Estúdio</a></li>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="wrap page-hero">
+      <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../projects.html">Projetos</a> / CVBoost</p>
+      <p class="kicker">SaaS</p>
+      <h1>CVBoost</h1>
+      <p class="lede">Criar, analisar ATS e otimizar currículos com IA. Pipeline Base → Vaga → Score → Export, não um editor genérico.</p>
+      <div class="meta-row">
+        <span class="chip">Next.js 15</span>
+        <span class="chip">Supabase Auth</span>
+        <span class="chip">MVP Sprint 5</span>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <figure class="project-shot shot-wide">
+        <img src="../assets/cvboost.png" alt="Landing do CVBoost com pergunta sobre ATS, preço do pacote beta e FAQ">
+        <figcaption>Landing — score ATS, créditos e exportação PDF</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap detail-layout">
+      <article class="prose">
+        <h2>Fluxo do candidato</h2>
+        <p>Login com Google, CRUD de currículos, editor com auto-save, importação de PDF no browser e revisão obrigatória. Score estrutural 0–100 com nota A–F, checklist e dicas apontando para a seção certa.</p>
+        <h2>IA com créditos</h2>
+        <p>Melhoria geral consome um crédito e mostra diff para aceitar ou rejeitar. Se a IA falha, o crédito volta. Export PDF via template Clássico ATS; plano free leva marca d'água.</p>
+        <h2>Operação</h2>
+        <ul>
+          <li>Admin credita PIX manual para o beta.</li>
+          <li>Termos, privacidade e página de planos no ar.</li>
+          <li>Marca configurável em pacote compartilhado.</li>
+        </ul>
+        <p><a class="btn btn-primary" href="../projects.html">Voltar aos projetos</a></p>
+      </article>
+      <aside class="aside card">
+        <h3>Ficha</h3>
+        <p>Monorepo pnpm: <code>apps/web</code> + <code>packages/brand</code> + <code>packages/shared</code>.</p>
+        <p>Pasta de origem: <code>sass/curriculo</code></p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap legal">© <span data-year>2026</span> OpenTheAspas Inc. · <a href="mailto:hello@opentheaspas.inc">hello@opentheaspas.inc</a></div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

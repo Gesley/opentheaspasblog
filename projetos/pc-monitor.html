@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Monitor — OpenTheAspas</title>
+  <meta name="description" content="HUD flutuante para Windows: CPU, GPU e RAM em tempo real. Sem Electron.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html">
+        <img src="../assets/logo.svg" alt="">
+        <span>OpenTheAspas</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menu"><span></span></button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../projects.html">Projetos</a></li>
+        <li><a href="../index.html#estudio">Estúdio</a></li>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="wrap page-hero">
+      <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../projects.html">Projetos</a> / PC Monitor</p>
+      <p class="kicker">Ferramentas</p>
+      <h1>PC Monitor</h1>
+      <p class="lede">Widget HUD permanente na área de trabalho. Gauges de temperatura e uso, gráficos compactos, overlay inspirado em hardware real — identidade própria.</p>
+      <div class="meta-row">
+        <span class="chip">.NET 8 · WPF</span>
+        <span class="chip">WebView2</span>
+        <span class="chip">LibreHardwareMonitor</span>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <figure class="project-shot shot-wide">
+        <img src="../assets/pc-monitor.png" alt="Overlay do PC Monitor sobre a área de trabalho: gauges de CPU e GPU, barras de uso e RAM">
+        <figcaption>HUD flutuante — CPU, GPU e RAM em tempo real</figcaption>
+      </figure>
+    </div>
+
+    <div class="wrap detail-layout">
+      <article class="prose">
+        <h2>O que mostra</h2>
+        <p>CPU: modelo, temperatura, uso e clock. GPU: modelo, temperatura, uso e clocks. RAM: uso e totais; temperatura só se o hardware expuser o sensor. FPS fica de fora de propósito.</p>
+        <h2>Arquitetura</h2>
+        <p>Host WPF lê sensores e envia JSON pelo WebViewBridge. A UI (Vue empacotada em wwwroot) roda no host virtual. Sem Electron: processo nativo, overlay leve.</p>
+        <h2>Limites honestos</h2>
+        <ul>
+          <li>RAM sem sensor → N/A na interface.</li>
+          <li>AMD com temperatura real pode exigir PawnIO e execução como administrador.</li>
+          <li>Intel, AMD e NVIDIA; GPU dedicada é preferida quando há mais de uma.</li>
+        </ul>
+        <p><a class="btn btn-primary" href="../projects.html">Voltar aos projetos</a></p>
+      </article>
+      <aside class="aside card">
+        <h3>Ficha</h3>
+        <p>Settings em <code>%AppData%\PCMonitor</code>. Alvo Windows 10/11.</p>
+        <p>Pasta de origem: <code>widget-meu-pc-monitor</code></p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap legal">© <span data-year>2026</span> OpenTheAspas Inc. · <a href="mailto:hello@opentheaspas.inc">hello@opentheaspas.inc</a></div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

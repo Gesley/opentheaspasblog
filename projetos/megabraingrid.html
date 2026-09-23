@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MegaBrainGrid — OpenTheAspas</title>
+  <meta name="description" content="Puzzle 2D mobile da OpenTheAspas: peças triangulares e tabuleiro 100% preenchido.">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html">
+        <img src="../assets/logo.svg" alt="">
+        <span>OpenTheAspas</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menu"><span></span></button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../projects.html">Projetos</a></li>
+        <li><a href="../index.html#estudio">Estúdio</a></li>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="wrap page-hero">
+      <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../projects.html">Projetos</a> / MegaBrainGrid</p>
+      <p class="kicker">Jogos</p>
+      <h1>MegaBrainGrid</h1>
+      <p class="lede">Arraste peças geométricas feitas de triângulos e preencha o alvo. Vitória só com todas as células ocupadas. “We opened the aspas and found a game.”</p>
+      <div class="meta-row">
+        <span class="chip">Godot 4.7 · GDScript</span>
+        <span class="chip">1080×1920 retrato</span>
+        <span class="chip">Android / iOS no radar</span>
+      </div>
+    </header>
+
+    <div class="wrap detail-layout">
+      <article class="prose">
+        <div class="shot-grid">
+          <figure class="project-shot">
+            <img src="../assets/megabraingrid.png" width="399" height="715" alt="Tela inicial do MegaBrainGrid: cientista, botão Jogar e menu de pontuações">
+            <figcaption>Menu — toque para jogar</figcaption>
+          </figure>
+          <figure class="project-shot">
+            <img src="../assets/megabraingrid-jogo.png" width="399" height="715" alt="Partida do MegaBrainGrid no nível 2, com tabuleiro triangular e peças na bandeja">
+            <figcaption>Partida — nível 2, malha triangular</figcaption>
+          </figure>
+        </div>
+        <h2>Regras</h2>
+        <p>O tabuleiro é o conjunto de células-alvo, não um losango vazio qualquer. Drop inválido devolve a peça à bandeja. Derrota só quando todas as peças foram usadas e ainda há buracos.</p>
+        <h2>Níveis 1–5</h2>
+        <p>Lattice N=3. A silhueta cresce a cada fase: 9 células no tutorial até o losango cheio de 18 no expert. Solver confirma packing; nível inválido não inicia partida.</p>
+        <ul>
+          <li>Nível 1 — barra, diamante, L.</li>
+          <li>Nível 5 — sete peças, losango completo.</li>
+        </ul>
+        <h2>Estado</h2>
+        <p>Protótipo jogável com HUD, overlay de resultado e suite de testes no load debug. Próximos passos: spritesheet, rotação no gesto do jogador, SFX, scoring e export mobile.</p>
+        <p><a class="btn btn-primary" href="../projects.html">Voltar aos projetos</a></p>
+      </article>
+      <aside class="aside card">
+        <h3>Ficha</h3>
+        <p>Versão 0.1.0. Autoloads: GameManager, LevelManager, ScoreManager.</p>
+        <p>Pasta de origem: <code>MegaBrainGrid/mega-brain-grid</code></p>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap legal">© <span data-year>2026</span> OpenTheAspas Inc. · <a href="mailto:hello@opentheaspas.inc">hello@opentheaspas.inc</a></div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

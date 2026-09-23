@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none" role="img" aria-label="OpenTheAspas">
+  <rect x="2" y="2" width="44" height="44" rx="12" fill="#0d121c" stroke="#3ee8c6" stroke-width="1.5"/>
+  <path d="M16 16 L10 24 L16 32" stroke="#3ee8c6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M32 16 L38 24 L32 32" stroke="#7c8cff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="24" r="3.2" fill="#e8edf5"/>
+</svg>

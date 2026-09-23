@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projetos — OpenTheAspas Inc.</title>
+  <meta name="description" content="Portfólio da OpenTheAspas: AI Engineer Academy, MegaBrainGrid, CVBoost e PC Monitor.">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="index.html">
+        <img src="assets/logo.svg" alt="">
+        <span>OpenTheAspas</span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menu">
+        <span></span>
+      </button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="projects.html">Projetos</a></li>
+        <li><a href="index.html#estudio">Estúdio</a></li>
+        <li><a href="index.html#sobre">Sobre</a></li>
+        <li><a href="index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="wrap page-hero">
+      <p class="kicker">Catálogo</p>
+      <h1>Projetos em produção</h1>
+      <p class="lede">Quatro linhas de produto ativas. Filtre por categoria ou abra a ficha técnica de cada um.</p>
+      <div class="filters" role="group" aria-label="Filtrar projetos">
+        <button class="filter-btn is-on" type="button" data-filter="all">Todos</button>
+        <button class="filter-btn" type="button" data-filter="edu">Educação</button>
+        <button class="filter-btn" type="button" data-filter="game">Jogos</button>
+        <button class="filter-btn" type="button" data-filter="saas">SaaS</button>
+        <button class="filter-btn" type="button" data-filter="tool">Ferramentas</button>
+      </div>
+    </header>
+
+    <section class="wrap" style="padding-top:0">
+      <div class="grid-2">
+        <article class="card project-card" data-kind="edu">
+          <div class="thumb thumb-academy thumb-photo thumb-wide">
+            <img src="assets/ai-engineer-academy.png" alt="Dashboard da AI Engineer Academy com progresso e módulo recomendado">
+          </div>
+          <div class="body">
+            <span class="tag">Educação · Web</span>
+            <h3>AI Engineer Academy</h3>
+            <p>Plataforma tipo universidade digital para Engenharia de IA Aplicada — roadmap, módulos, quizzes e glossário.</p>
+            <p><a href="projetos/ai-engineer-academy.html">Ver detalhe →</a></p>
+          </div>
+        </article>
+
+        <article class="card project-card" data-kind="game">
+          <div class="thumb thumb-grid thumb-photo">
+            <img src="assets/megabraingrid-jogo.png" alt="Partida do MegaBrainGrid com tabuleiro triangular">
+          </div>
+          <div class="body">
+            <span class="tag">Jogos · Godot 4.7</span>
+            <h3>MegaBrainGrid</h3>
+            <p>Puzzle mobile em retrato: peças triangulares, snap preciso e vitória só com 100% do tabuleiro ocupado.</p>
+            <p><a href="projetos/megabraingrid.html">Ver detalhe →</a></p>
+          </div>
+        </article>
+
+        <article class="card project-card" data-kind="saas">
+          <div class="thumb thumb-cv thumb-photo thumb-wide">
+            <img src="assets/cvboost.png" alt="Landing do CVBoost: score ATS, créditos e exportação PDF">
+          </div>
+          <div class="body">
+            <span class="tag">SaaS · Carreira</span>
+            <h3>CVBoost</h3>
+            <p>Criação, score ATS e otimização de currículos com IA, créditos e exportação PDF.</p>
+            <p><a href="projetos/cvboost.html">Ver detalhe →</a></p>
+          </div>
+        </article>
+
+        <article class="card project-card" data-kind="tool">
+          <div class="thumb thumb-pc thumb-photo thumb-wide">
+            <img src="assets/pc-monitor.png" alt="HUD do PC Monitor com temperatura e uso de CPU, GPU e RAM">
+          </div>
+          <div class="body">
+            <span class="tag">Windows · HUD</span>
+            <h3>PC Monitor</h3>
+            <p>Widget flutuante para CPU, GPU e RAM em tempo real — WPF + WebView2, sem Electron.</p>
+            <p><a href="projetos/pc-monitor.html">Ver detalhe →</a></p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand" href="index.html">
+          <img src="assets/logo.svg" alt="">
+          <span>OpenTheAspas Inc.</span>
+        </a>
+        <p>Portfólio público do estúdio.</p>
+      </div>
+      <div>
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="index.html">Início</a></li>
+          <li><a href="projects.html">Projetos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contato</h3>
+        <ul>
+          <li><a href="mailto:hello@opentheaspas.inc">hello@opentheaspas.inc</a></li>
+          <li>Brasil · remoto</li>
+        </ul>
+      </div>
+    </div>
+    <div class="wrap legal">© <span data-year>2026</span> OpenTheAspas Inc.</div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
