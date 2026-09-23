@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PC Monitor: overlay nativo, sem Electron — Blog</title>
+  <meta name="description" content="Gesley Rodrigues explica o PC Monitor: WPF, WebView2, sensores reais e o roadmap do widget.">
+  <meta name="author" content="Gesley Rodrigues">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt=""><span>OpenTheAspas</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menu"><span></span></button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../projects.html">Projetos</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="wrap page-hero">
+      <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../blog.html">Blog</a> / PC Monitor</p>
+      <p class="kicker">Agosto de 2026</p>
+      <h1>PC Monitor: overlay nativo, sem Electron</h1>
+      <div class="byline">
+        <span>Por <strong>Gesley Rodrigues</strong></span>
+        <time datetime="2026-08-19">19 de agosto de 2026</time>
+        <span>6 min de leitura</span>
+      </div>
+    </header>
+
+    <div class="wrap">
+      <figure class="project-shot shot-wide article-hero-img">
+        <img src="../assets/pc-monitor.png" alt="HUD do PC Monitor">
+        <figcaption>Gauges de temperatura, uso e RAM — o FPS ficou de fora de propósito.</figcaption>
+      </figure>
+    </div>
+
+    <article class="wrap prose" style="max-width:68ch;padding-bottom:80px">
+      <p>Eu queria um HUD permanente na área de trabalho, leve o suficiente para esquecer que está aberto. Electron pagaria um Chromium inteiro para três gauges. O caminho foi WPF (.NET 8) + WebView2: o host lê sensores com LibreHardwareMonitor e manda JSON; a UI renderiza no host virtual.</p>
+      <p>CPU e GPU mostram modelo, temperatura, uso e clock quando o hardware expõe o sensor. RAM mostra usados/total; temperatura só se existir. Intel, AMD e NVIDIA. Várias GPUs? A dedicada ganha. AMD quente de verdade pode exigir PawnIO e execução como administrador — o produto admite N/A em vez de inventar número.</p>
+      <h2>Evoluções possíveis</h2>
+      <ul>
+        <li>Instalador (WiX ou Inno) a partir do publish self-contained ou framework-dependent.</li>
+        <li>Temas e opacidade persistidos em <code>%AppData%\PCMonitor</code>.</li>
+        <li>Mais de um layout: compacto para canto da tela, expandido para diagnóstico.</li>
+        <li>Alertas discretos de temperatura, sem virar “overlay gamer” barulhento.</li>
+        <li>Assinatura de código e update silencioso — o dia em que o exe sair da pasta de build.</li>
+      </ul>
+      <p>Enquanto isso, o critério de ouro permanece: se o sensor não existe, a interface diz N/A. Mentir temperatura é pior do que um espaço vazio.</p>
+      <p>
+        <a class="btn btn-primary" href="../projetos/pc-monitor.html">Ficha do projeto</a>
+        <a class="btn btn-ghost" href="../blog.html">Blog</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap legal">© <span data-year>2026</span> OpenTheAspas Inc. · Gesley Rodrigues · <a href="mailto:rodrigues.gesley@gmail.com">rodrigues.gesley@gmail.com</a></div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>

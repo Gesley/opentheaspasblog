@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MegaBrainGrid: um puzzle que só aceita 100% — Blog</title>
+  <meta name="description" content="Gesley Rodrigues escreve sobre o MegaBrainGrid: malha triangular, níveis solucionáveis e o caminho até as lojas.">
+  <meta name="author" content="Gesley Rodrigues">
+  <link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#conteudo">Ir para o conteúdo</a>
+  <header class="site-header">
+    <div class="wrap nav">
+      <a class="brand" href="../index.html"><img src="../assets/logo.svg" alt=""><span>OpenTheAspas</span></a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-label="Abrir menu"><span></span></button>
+      <ul class="nav-links" data-nav-links>
+        <li><a href="../index.html">Início</a></li>
+        <li><a href="../projects.html">Projetos</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="../index.html#sobre">Sobre</a></li>
+        <li><a href="../index.html#contato">Contato</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="conteudo">
+    <header class="wrap page-hero">
+      <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../blog.html">Blog</a> / MegaBrainGrid</p>
+      <p class="kicker">Setembro de 2026</p>
+      <h1>MegaBrainGrid: um puzzle que só aceita 100%</h1>
+      <div class="byline">
+        <span>Por <strong>Gesley Rodrigues</strong></span>
+        <time datetime="2026-09-15">15 de setembro de 2026</time>
+        <span>7 min de leitura</span>
+      </div>
+    </header>
+
+    <div class="wrap shot-grid" style="margin-bottom:28px">
+      <figure class="project-shot">
+        <img src="../assets/megabraingrid.png" alt="Menu do MegaBrainGrid">
+        <figcaption>Menu — toque para jogar.</figcaption>
+      </figure>
+      <figure class="project-shot">
+        <img src="../assets/megabraingrid-jogo.png" alt="Partida nível 2">
+        <figcaption>Nível 2 — a malha cresce; a regra não afrouxa.</figcaption>
+      </figure>
+    </div>
+
+    <article class="wrap prose" style="max-width:68ch;padding-bottom:80px">
+      <p>We opened the aspas and found a game. O MegaBrainGrid é um puzzle 2D em retrato: peças feitas de triângulos, tabuleiro-alvo, vitória só com todas as células ocupadas. Drop inválido devolve a peça. Derrota só quando a bandeja esvazia e ainda há buraco.</p>
+      <p>A engine é Godot 4.7. Os níveis nascem da solução — âncoras e rotações gravadas — e um solver confirma packing antes da partida existir. A suite de debug imprime LEVEL N: SOLVABLE. Eu não publico nível que falha nisso. Do tutorial de 9 células ao losango cheio de 18, a silhueta cresce; a regra de 100% não muda.</p>
+      <p>No HUD já aparecem ranks (Skullull → Einstein), tentativas, pontos e fase. A arte das peças ainda é polígono; o spritesheet espera a vez. A rotação de 60° existe na lógica — o jogador ainda não gira no gesto.</p>
+      <h2>Evoluções possíveis</h2>
+      <ul>
+        <li>Giro no toque e campanha além dos cinco níveis atuais.</li>
+        <li>SFX, scoring de verdade (combo, estrelas) e créditos OpenTheAspas na tela.</li>
+        <li>Export Android e iOS — o viewport já pensa 1080×1920.</li>
+        <li>Ligar o spritesheet sem perder o snap preciso do PlacementValidator.</li>
+        <li>Um modo diário: um tabuleiro, um ranking, zero anúncio no primeiro mês.</li>
+      </ul>
+      <p>Enquanto as lojas não abrem, o jogo já tem opinião: ou a malha fecha, ou você tenta de novo. Sem meia célula. Sem vitória por aproximação.</p>
+      <p>
+        <a class="btn btn-primary" href="../projetos/megabraingrid.html">Ficha do projeto</a>
+        <a class="btn btn-ghost" href="../blog.html">Blog</a>
+      </p>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap legal">© <span data-year>2026</span> OpenTheAspas Inc. · Gesley Rodrigues · <a href="mailto:rodrigues.gesley@gmail.com">rodrigues.gesley@gmail.com</a></div>
+  </footer>
+  <script src="../script.js"></script>
+</body>
+</html>
