@@ -25,8 +25,8 @@
     </div>
   </header>
 
-  <main id="conteudo">
-    <header class="wrap page-hero">
+  <main id="conteudo" class="article-page">
+    <header class="page-hero">
       <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../blog.html">Blog</a> / MegaBrainGrid</p>
       <p class="kicker">Setembro de 2026</p>
       <h1>MegaBrainGrid: um puzzle que só aceita 100%</h1>
@@ -37,7 +37,7 @@
       </div>
     </header>
 
-    <div class="wrap shot-grid" style="margin-bottom:28px">
+    <div class="article-phones">
       <figure class="project-shot">
         <img src="../assets/megabraingrid.png" alt="Menu do MegaBrainGrid">
         <figcaption>Menu — toque para jogar.</figcaption>
@@ -48,7 +48,7 @@
       </figure>
     </div>
 
-    <article class="wrap prose" style="max-width:68ch;padding-bottom:80px">
+    <article class="prose">
       <p>We opened the aspas and found a game. O MegaBrainGrid é um puzzle 2D em retrato: peças feitas de triângulos, tabuleiro-alvo, vitória só com todas as células ocupadas. Drop inválido devolve a peça. Derrota só quando a bandeja esvazia e ainda há buraco.</p>
       <p>A engine é Godot 4.7. Os níveis nascem da solução — âncoras e rotações gravadas — e um solver confirma packing antes da partida existir. A suite de debug imprime LEVEL N: SOLVABLE. Eu não publico nível que falha nisso. Do tutorial de 9 células ao losango cheio de 18, a silhueta cresce; a regra de 100% não muda.</p>
       <p>No HUD já aparecem ranks (Skullull → Einstein), tentativas, pontos e fase. A arte das peças ainda é polígono; o spritesheet espera a vez. A rotação de 60° existe na lógica — o jogador ainda não gira no gesto.</p>

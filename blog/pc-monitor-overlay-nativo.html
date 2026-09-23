@@ -25,8 +25,8 @@
     </div>
   </header>
 
-  <main id="conteudo">
-    <header class="wrap page-hero">
+  <main id="conteudo" class="article-page">
+    <header class="page-hero">
       <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../blog.html">Blog</a> / PC Monitor</p>
       <p class="kicker">Agosto de 2026</p>
       <h1>PC Monitor: overlay nativo, sem Electron</h1>
@@ -37,14 +37,12 @@
       </div>
     </header>
 
-    <div class="wrap">
-      <figure class="project-shot shot-wide article-hero-img">
-        <img src="../assets/pc-monitor.png" alt="HUD do PC Monitor">
-        <figcaption>Gauges de temperatura, uso e RAM — o FPS ficou de fora de propósito.</figcaption>
-      </figure>
-    </div>
+    <figure class="project-shot article-hero-img">
+      <img src="../assets/pc-monitor.png" alt="HUD do PC Monitor">
+      <figcaption>Gauges de temperatura, uso e RAM — o FPS ficou de fora de propósito.</figcaption>
+    </figure>
 
-    <article class="wrap prose" style="max-width:68ch;padding-bottom:80px">
+    <article class="prose">
       <p>Eu queria um HUD permanente na área de trabalho, leve o suficiente para esquecer que está aberto. Electron pagaria um Chromium inteiro para três gauges. O caminho foi WPF (.NET 8) + WebView2: o host lê sensores com LibreHardwareMonitor e manda JSON; a UI renderiza no host virtual.</p>
       <p>CPU e GPU mostram modelo, temperatura, uso e clock quando o hardware expõe o sensor. RAM mostra usados/total; temperatura só se existir. Intel, AMD e NVIDIA. Várias GPUs? A dedicada ganha. AMD quente de verdade pode exigir PawnIO e execução como administrador — o produto admite N/A em vez de inventar número.</p>
       <h2>Evoluções possíveis</h2>

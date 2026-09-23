@@ -213,7 +213,14 @@ h1, h2, h3 {
 
 h1 {
   font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+.hero h1 {
   max-width: 16ch;
+}
+
+.page-hero h1 {
+  max-width: 22ch;
 }
 
 h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); }
@@ -481,7 +488,9 @@ section {
 }
 
 .blog-card .thumb {
-  min-height: 160px;
+  height: 148px;
+  max-height: 148px;
+  overflow: hidden;
   margin: 0;
   border: 0;
   border-right: 1px solid var(--line);
@@ -491,6 +500,7 @@ section {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center 28%;
 }
 
 .blog-card .body {
@@ -516,8 +526,41 @@ section {
   font-size: 0.92rem;
 }
 
+.article-page {
+  width: min(720px, calc(100% - 40px));
+  margin-inline: auto;
+  padding-bottom: 80px;
+}
+
+.article-page .page-hero {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.article-phones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 16px;
+  margin: 0 0 32px;
+}
+
+.article-phones .project-shot {
+  flex: 0 1 200px;
+  width: 200px;
+  max-width: 200px;
+}
+
 .article-hero-img {
   margin: 0 0 28px;
+  max-height: 340px;
+}
+
+.article-hero-img img {
+  width: 100%;
+  height: 340px;
+  object-fit: cover;
+  object-position: left top;
 }
 
 @media (max-width: 900px) {
@@ -526,7 +569,8 @@ section {
   }
 
   .blog-card .thumb {
-    height: 180px;
+    height: 140px;
+    max-height: 140px;
     border-right: 0;
     border-bottom: 1px solid var(--line);
   }
