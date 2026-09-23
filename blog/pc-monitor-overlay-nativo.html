@@ -18,7 +18,7 @@
       <ul class="nav-links" data-nav-links>
         <li><a href="../index.html">Início</a></li>
         <li><a href="../projects.html">Projetos</a></li>
-        <li><a href="../blog.html">Blog</a></li>
+        <li><a href="./">Blog</a></li>
         <li><a href="../sobre.html">Sobre</a></li>
         <li><a href="../index.html#contato">Contato</a></li>
       </ul>
@@ -27,7 +27,7 @@
 
   <main id="conteudo" class="article-page">
     <header class="page-hero">
-      <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="../blog.html">Blog</a> / PC Monitor</p>
+      <p class="breadcrumb"><a href="../index.html">Início</a> / <a href="./">Blog</a> / PC Monitor</p>
       <p class="kicker">Agosto de 2026</p>
       <h1>PC Monitor: overlay nativo, sem Electron</h1>
       <div class="byline">
@@ -37,10 +37,11 @@
       </div>
     </header>
 
-    <figure class="project-shot article-hero-img">
-      <img src="../assets/pc-monitor.png" alt="HUD do PC Monitor">
-      <figcaption>Gauges de temperatura, uso e RAM — o FPS ficou de fora de propósito.</figcaption>
-    </figure>
+    <div class="article-thumbs">
+      <button type="button" class="article-thumb" data-full="../assets/pc-monitor.png">
+        <img src="../assets/pc-monitor.png" alt="HUD do PC Monitor">
+      </button>
+    </div>
 
     <article class="prose">
       <p>Eu queria um HUD permanente na área de trabalho, leve o suficiente para esquecer que está aberto. Electron pagaria um Chromium inteiro para três gauges. O caminho foi WPF (.NET 8) + WebView2: o host lê sensores com LibreHardwareMonitor e manda JSON; a UI renderiza no host virtual.</p>
@@ -56,7 +57,7 @@
       <p>Enquanto isso, o critério de ouro permanece: se o sensor não existe, a interface diz N/A. Mentir temperatura é pior do que um espaço vazio.</p>
       <p>
         <a class="btn btn-primary" href="../projetos/pc-monitor.html">Ficha do projeto</a>
-        <a class="btn btn-ghost" href="../blog.html">Blog</a>
+        <a class="btn btn-ghost" href="./">Blog</a>
       </p>
     </article>
   </main>

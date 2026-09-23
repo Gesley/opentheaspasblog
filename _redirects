@@ -1,4 +1,5 @@
-/blog /blog.html 200
+/blog /blog/index.html 200
+/blog/ /blog/index.html 200
 /sobre /sobre.html 200
 /sobre/ /sobre.html 301
 /projetos /projects.html 301
