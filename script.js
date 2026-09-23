@@ -24,7 +24,12 @@
     var onProjects = /(?:^|\/)projects\.html$/.test(path) || /(?:^|\/)projetos\/?$/.test(path);
     var onProjectDetail = /\/projetos\/.+\.html$/.test(path);
     var onBlog = /(?:^|\/)blog\.html$/.test(path) || /\/blog\//.test(path);
+    var onAbout = /(?:^|\/)sobre\.html$/.test(path);
 
+    if (file === "sobre.html" && onAbout) {
+      a.classList.add("is-active");
+      return;
+    }
     if (file === "blog.html" && onBlog) {
       a.classList.add("is-active");
       return;
